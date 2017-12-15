@@ -9,6 +9,11 @@ class Api::V1::CatsController < Api::V1::ApiController
     json_response(@cat)
   end
 
+  def random
+   @cat = Cat.random
+   json_response(@cat)
+  end
+
   def create
     @cat = Cat.create!(cat_params)
     json_response(@cat, :created)
