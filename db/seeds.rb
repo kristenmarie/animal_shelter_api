@@ -19,7 +19,7 @@ class Seed
 
       Cat.create!(
         name: Faker::StarWars.character,
-        breed: Faker::Car.breed,
+        breed: Faker::Cat.breed,
         age: Faker::Number.between(1,20),
         gender: Faker::Dog.gender,
         bio: Faker::StarWars.wookiee_sentence
