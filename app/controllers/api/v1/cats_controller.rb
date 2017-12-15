@@ -1,6 +1,17 @@
 class Api::V1::CatsController < Api::V1::ApiController
   def index
-    @cats = Cat.all
+    breed = params[:breed]
+    age = params[:age]
+    gender = params[:gender]
+    if breed
+      @cats = Cat.breed_search(breed)
+    elsif age
+      @cats = Cat.age_search(age)
+    elsif gender
+      @cats = Cat.gender_search(gender)
+    else
+      @cats = Cat.all
+    end
     json_response(@cats)
   end
 
