@@ -5,7 +5,7 @@ describe 'get all dogs route', :type => :request do
 
   before { get '/api/v1/dogs' }
 
-  it 'returns all destinations' do
+  it 'returns all dogs' do
     expect(JSON.parse(response.body).size).to eq(20)
   end
 
