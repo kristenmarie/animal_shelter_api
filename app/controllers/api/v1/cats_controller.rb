@@ -6,7 +6,7 @@ class Api::V1::CatsController < Api::V1::ApiController
 
   def show
     @cat = Cat.find(params[:id])
-    json_response(@cats)
+    json_response(@cat)
   end
 
   def create

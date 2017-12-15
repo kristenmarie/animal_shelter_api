@@ -6,7 +6,7 @@ class Api::V1::DogsController < Api::V1::ApiController
 
   def show
     @dog = Dog.find(params[:id])
-    json_response(@dogs)
+    json_response(@dog)
   end
 
   def create
