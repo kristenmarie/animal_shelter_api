@@ -13,7 +13,7 @@ An API setup for an animal shelter with cats and dogs.
 
 ## Setup/Installation Requirements
 * Clone this repository
-* In terminal, navigate to this projects root directory (ecommerce_refactor)
+* In terminal, navigate to this projects root directory (animal_shelter_api)
 * In terminal (while still in root directory), enter the following commands:
   * ``` $ bundle install ```
   * ``` $ rails db:setup ```
