@@ -36,6 +36,6 @@ class Api::V1::CatsController < Api::V1::ApiController
   end
 
   def cat_params
-    params.permit(:name, :breed, :age, :gender, :declawed, :location)
+    params.permit(:name, :breed, :age, :gender, :declawed, :location, :bio)
   end
 end
