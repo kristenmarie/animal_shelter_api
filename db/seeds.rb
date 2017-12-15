@@ -4,10 +4,10 @@ class Seed
     Cat.destroy_all
     Dog.destroy_all
     seed = Seed.new
-    seed.generate_destinations
+    seed.generate_animals
   end
 
-  def generate_destinations
+  def generate_animals
     20.times do
       Dog.create!(
         name: Faker::StarWars.character,
